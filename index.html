@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 AI Resume Builder</h1>
+    <form id="resumeForm">
+      <input type="text" placeholder="Full Name" id="name" required>
+      <input type="text" placeholder="Email" id="email" required>
+      <textarea id="summary" placeholder="Professional Summary"></textarea>
+      <textarea id="skills" placeholder="List your skills (comma separated)"></textarea>
+      <textarea id="projects" placeholder="Mention key projects"></textarea>
+      <button type="button" onclick="analyzeResume()">Analyze Resume</button>
+    </form>
+
+    <div class="result">
+      <h2>Resume Score: <span id="score">0</span>/100</h2>
+      <div class="progress-bar"><div id="bar"></div></div>
+      <h3>Suggestions:</h3>
+      <ul id="suggestions"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
